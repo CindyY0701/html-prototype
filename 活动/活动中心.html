@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+        $(function () {
+
+        })
+    </script>
+</head>
+
+<body class="hd_body">
+    <div class="body_flex">
+        <span class="back">返回</span>
+        <div class="rt">
+            <div class="btn">
+                <span class="span_btn on">每日签到</span>
+                <span class="span_btn">幸运抽奖</span>
+            </div>
+        </div>
+        <div class="ct">
+            <div class="box">
+                <img src="../img/hd/text1.png" class="img_tit show1" />
+                <img src="../img/hd/text2.png" class="img_tit show2" />
+                <div class="text show1">
+                    <span class="span_tit">2024-8</span>
+                    <div class="date"></div>
+                </div>
+                <div class="list show2">
+                    <ul class="cj_list" id="lottery">
+                        <li class="lottery-unit lottery-unit-0"><div class="b"><img src="../img/hd/img3.png" /><span>8</span><p>usdt</p></div></li>
+                        <li class="lottery-unit lottery-unit-1"><div class="b"><img src="../img/hd/img3.png" /><span>18</span><p>usdt</p></div></li>
+                        <li class="lottery-unit lottery-unit-2"><div class="b"><img src="../img/hd/img3.png" /><span>28</span><p>usdt</p></div></li>
+                        <li class="lottery-unit lottery-unit-3"><div class="b"><img src="../img/hd/img3.png" /><span>0.1</span><p>usdt</p></div></li>
+                        <li class="lottery-unit lottery-unit-4 no"><div class="b"><img src="../img/hd/img4.png" /></div></li>
+                        <li class="lottery-unit lottery-unit-5"><div class="b"><img src="../img/hd/img3.png" /><span>38</span><p>usdt</p></div></li>
+                        <li class="lottery-unit lottery-unit-6"><div class="b"><img src="../img/hd/img3.png" /><span>588</span><p>usdt</p></div></li>
+                        <li class="lottery-unit lottery-unit-7"><div class="b"><img src="../img/hd/img3.png" /><span>168</span><p>usdt</p></div></li>
+                        <li class="lottery-unit lottery-unit-8"><div class="b"><img src="../img/hd/img3.png" /><span>88</span><p>usdt</p></div></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="bottom show1">
+                <div class="qd_btn djqd"><span><img src="../img/hd/btn_txt.png" /></span></div>
+            </div>
+            <div class="qdgz_txt show1">
+                <span class="span_tit2">签到规则</span>
+                <div class="hd_tips">
+                    <p>要求：用户流水达到1000USDT可参加签到活动</p>
+                    <p>规则：</p>
+                    <p>一、每月1号签到奖励1USDT，连续签到第10天领取8USDT</p>
+                    <p>二、第11天签到领取2USDT，连续签到20天领取18USDT</p>
+                    <p>三、第21天签到领取3USDT，连续签到当月最后一日领取28USDT</p>
+                </div>
+            </div>
+            <div class="bottom show2">
+                <div class="qd_btn djcj"><span><img src="../img/hd/btn_txt2.png" /></span></div>
+                <span class="txt">剩余0次</span>
+                <p>要求:亏损用户次日可获得抽奖机会一次</p>
+                <div class="hd_tips" style="margin:0 20px">
+                    <p>参加条件：彩票当日亏损1元或以上</p>
+                    <p>规则：当日达到参加条件，隔日即可获得一次幸运抽奖机会</p>
+                    <p>注意事项：<br>此活动奖励投注星需达一倍流水才可申请提款。</p>
+                    <p>优惠活动仅为真实会员而设，任何团队或个人以不诚实的方式进行套利行为，公司有权保留冻结、取消该团队或个人账户及账户余额的权利。</p>
+                    <p>长征娱乐将保留对活动的最终解释权，在任何情况下可时更改、停止及取消该优惠活动的权利。</p>
+                    <p>会员参加本活动则被视为认可并同意遵守规则及长征娱乐所有规定。</p>
+                </div>
+            </div>
+            <div class="ht20"></div>
+        </div>
+
+    </div>
+    <style>
+        * { -moz-user-select: none; /*火狐*/ -webkit-user-select: none; /*webkit浏览器*/ -ms-user-select: none; /*IE10*/ -khtml-user-select: none; /*早期浏览器*/ user-select: none; }
+        .hd_body { line-height: 1; background: url(../img/hd/hd_bg.jpg) no-repeat center center; background-size: cover; background-attachment: fixed; width: 100%; height: 100vh; }
+        .body_flex { width: 96%; height: 100vh; display: flex; align-items: center; flex-direction: column; margin: 0 auto; }
+        .lt img { display: block; margin: 0 auto; }
+        .lt .img { margin-top: 50px; height: 400px; overflow: initial; }
+        .ct .box { width: 100%; position: relative; height: 9rem; background: url(../img/hd/ct_bg.png) no-repeat center center; background-size: 100% auto; margin: 0 auto; }
+        .img_tit { position: absolute; top: 1.45rem; width: 2rem; left: 0; right: 0; margin: 0 auto; }
+        .ct { width: 100%; }
+        .ct .box .list,
+        .ct .box .text { position: absolute; padding: 0.2rem; box-sizing: border-box; height: 5.5rem; top: 2.8rem; border-radius: 0.2rem; left: 0.8rem; right: 0.8rem }
+        .ct .box .text { background: #b2dbff }
+        .ct .box .list { padding: 3px }
+        .rt { width: 100%; text-align: center; padding-top: 40px }
+        .rt .btn { display: flex; align-items: center; justify-content: center; }
+        .rt .span_btn { cursor: pointer; display: block; width: 2.8rem; height: .75rem; line-height: .75rem; background: url(../img/hd/btn.png) no-repeat center center; background-size: 100% 100%; text-align: center; font-size: .38rem; font-weight: bold; color: #fff; margin: 0 .25rem; margin-bottom: 0.25rem; opacity: 0.4 }
+        .rt .span_btn.on { opacity: 1 }
+        .span_tit { font-size: 16px; color: #393939; font-weight: bold; display: block; }
+        .date { height: 4.7rem; border-radius: 10px; background: rgba(255,255,255,0.4); box-sizing: border-box; padding: 10px; margin-top: 10px; }
+        .date table { width: 100%; }
+        .span_tit2 { display: block; font-size: 16px; width: 116px; line-height: 26px; border-radius: 10px; background: rgba(255,255,255,0.4); color: #438aff; text-align: center; margin: 0.3rem auto 0.2rem; font-weight: bold; }
+        .hd_tips { color: #438aff; line-height: 21px; font-size: 12px; }
+        .date table { text-align: center; table-layout: fixed; height: 100%; color: #004365; font-size: 14px; }
+        .date td, .date th { position: relative; vertical-align: middle; z-index: 1; }
+        .date td.on:after { position: absolute; content: ''; display: block; width: 0.6rem; height: 37px; background: url(../img/hd/icon1.png) no-repeat center center; background-size: 100% auto; top: 0; left: 10px; z-index: -1 }
+        .qd_btn { width: 132px; height: 48px; margin: 0 auto; position: relative; text-align: center; margin-top: 20px; z-index: 1; line-height: 48px;; display: flex; align-items: center; justify-content: center; }
+        .qd_btn span { display: flex; align-items: center; justify-content: center; width: 112px; height: 40px; margin: 0 auto; color: transparent; transform: translateY(3px); cursor: pointer; }
+        .qd_btn span img { width: initial; height: 40px }
+        .qd_btn span:active { transform: translateY(5px); }
+        .qd_btn:after { content: ''; display: block; width: 180px; height: 98px; background: url(../img/hd/btn_bg.png) no-repeat center center; position: absolute; top: -9px; left: -24px; z-index: -1 }
+        .bottom { position: relative; margin-top: -0.1rem }
+        .bottom .txt { position: absolute; top: 15px; left: 50%; margin-left: 90px; color: #ff563d; font-size: 0.35rem; font-weight: bold; }
+        .bottom > p { text-align: center; margin-top: 20px; font-size: 0.35rem; color: #438aff; font-weight: bold; margin-bottom: 20px; }
+        .qdgz_txt { width: 90%; margin: 0 auto; }
+        .cj_list { display: flex; flex-wrap: wrap; margin: -10px; }
+        .cj_list li { flex: 0 0 33.33%; }
+        .cj_list .b { font-size: 16px; margin: 0.1rem; width: 1.7rem; height: 1.7rem; background: url(../img/hd/bg.png) no-repeat center center; background-size: 100% auto; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 0.2rem; overflow: hidden; }
+        .cj_list .b img { width: 60%; }
+        .cj_list li.no .b img { width: 90%; }
+        .cj_list li.no .b { background: url(../img/hd/bg2.png) no-repeat center center; background-size: 100% auto; }
+        .cj_list li.active .b { background: #e7c486; }
+        .cj_list span { color: #ff563d; font-size: 18px; line-height: 1.3 }
+        .cj_list p { color: #438aff }
+        .btn { position: relative; }
+        .back { color: #438aff; text-align: left; position: absolute; top: 10px; left: 10px; font-size: 14px }
+        .back:before { content: '←'; margin-right: 5px; }
+    </style>
+    <script>
+        function font() {
+            var sw = $("body,html").width() < 750 ? $("body,html").width() : 750;
+            var pw = $("body").hasClass("body1") ? 1080 : 750;
+
+            var f = 100 * sw / pw;
+            $('html').css('font-size', f + 'px');
+        }
+        $(function () {
+
+            if ($(".span_btn.on").index() == 0) $(".show2").hide()
+            else { $(".show1").hide() }
+            $(".span_btn").click(function (e) {
+                $(this).addClass("on").siblings().removeClass("on")
+                if ($(this).index() == 0) { $(".show1").show(); $(".show2").hide() }
+                if ($(this).index() == 1) { $(".show2").show(); $(".show1").hide() }
+            })
+            $(".date").html(createCalendar())
+            let qd_date = [2, 3, 4, 5];//以前签到的日期
+            $(".date table td").each(function () {
+                let d = parseInt($(this).html());
+                console.log(qd_date.indexOf(d))
+                if (qd_date.indexOf(d) >= 0) {
+                    $(this).addClass("on")
+                }
+            })
+            $(".djqd").click(function () {
+                let d = new Date().getDate();
+                $(".date table td").each(function () {
+                    if ($(this).html() == d) $(this).addClass("on")
+                })
+            });
+
+        })
+        function createCalendar() {
+            var currentDate = new Date().getDate();
+
+            var activeDate = new Date(currentDate);
+            var ret = ['<table><tr>'];
+            activeDate.setDate(1);
+            activeDate.setDate(1 - activeDate.getDay());
+            var header = "日一二三四五六";
+            //日历的头部
+            for (var i = 0; i < header.length; i++) {
+                ret[ret.length] = '<th>' + header.charAt(i) + '</th>';
+            }
+            ret[ret.length] = '</tr><tr>';
+            var bf = true, af = false;
+            let n = getWeeks() * 7;
+            for (var i = 0; i < n; i++) {
+                var date = activeDate.getDate();
+                if (date == 1) {
+                    if (bf) {
+                        bf = false;
+                    } else {
+                        af = true;
+                    }
+                }
+                //日期是否在当前月份内
+                if (af || bf) {
+                    ret[ret.length] = '<td class="grey"></td>';
+                } else {
+                    //if (date == currentDate) { ret[ret.length] = '<td class="on">' + date + '</td>'; }
+                    //else { }
+                    ret[ret.length] = '<td>' + date + '</td>';
+
+                }
+                if ((i + 1) % 7 == 0) {
+                    ret[ret.length] = '</tr><tr>';
+                }
+                activeDate.setDate(date + 1);
+            }
+            //修改最后一个
+            ret[ret.length - 1] = '</tr></table>';
+            //返回日历表格
+            return ret.join("");
+        };
+        function getWeeks() {
+            var date = new Date((new Date(this).setDate(1)) || (new Date()).setDate(1));
+            //  var date = new Date("2025-3-23");
+            var firstWeekDate;
+            if (date.getDay() === 0) { // 判断1号是周日
+                firstWeekDate = 6;
+            } else { // 判断1号是周一至周六之间
+                firstWeekDate = date.getDay() - 1;
+            }
+            date.setMonth(date.getMonth() + 1);
+            date.setDate(0);
+            //  date.getDate();// 本月天数
+            var monthHasDays = date.getDate() + firstWeekDate;
+            return Math.ceil(monthHasDays / 7); // 计算本月有几周
+
+        }
+
+        var lottery = {
+            index: -1,	//当前转动到哪个位置，起点位置
+            count: 0,	//总共有多少个位置
+            timer: 0,	//setTimeout的ID，用clearTimeout清除
+            speed: 100,	//初始转动速度
+            times: 0,	//转动次数
+            cycle: 50,	//转动基本次数：即至少需要转动多少次再进入抽奖环节
+            prize: -1,	//中奖位置
+            init: function (id) {
+                if ($("#" + id).find(".lottery-unit").length > 0) {
+                    $lottery = $("#" + id);
+                    $units = $lottery.find(".lottery-unit");
+                    this.obj = $lottery;
+                    this.count = $units.length;
+                    $lottery.find(".lottery-unit-" + this.index).addClass("active");
+                };
+            },
+            roll: function () {
+                var index = this.index;
+                var count = this.count;
+                var lottery = this.obj;
+                $(lottery).find(".lottery-unit-" + index).removeClass("active");
+                index += 1;
+                if (index > count - 1) {
+                    index = 0;
+                };
+                $(lottery).find(".lottery-unit-" + index).addClass("active");
+                this.index = index;
+                return false;
+            },
+            stop: function (index) {
+                this.prize = index;
+                return false;
+            }
+        };
+        function roll() {
+            lottery.times += 1;
+            lottery.roll();
+            if (lottery.times > lottery.cycle + 10 && lottery.prize == lottery.index) {
+                clearTimeout(lottery.timer);
+                lottery.prize = -1;
+                lottery.times = 0;
+                click = false;
+            } else {
+                if (lottery.times < lottery.cycle) {
+                    lottery.speed -= 20;
+                } else if (lottery.times == lottery.cycle) {
+                    var index = Math.random() * (lottery.count) | 0;
+                    lottery.prize = index;
+                } else {
+                    if (lottery.times > lottery.cycle + 10 && ((lottery.prize == 0 && lottery.index == 7) || lottery.prize == lottery.index + 1)) {
+                        lottery.speed += 220;
+                    } else {
+                        lottery.speed += 40;
+                    }
+                }
+                if (lottery.speed < 80) {
+                    lottery.speed = 80;
+                };
+                //console.log(lottery.times+'^^^^^^'+lottery.speed+'^^^^^^^'+lottery.prize);
+                lottery.timer = setTimeout(roll, lottery.speed);
+            }
+            return false;
+        }
+        var click = false;
+        window.onload = function () {
+            lottery.init('lottery');
+            $(".djcj").click(function () {
+                if (click) {
+                    return false;
+                } else {
+                    lottery.speed = 200;
+                    roll();
+                    click = true;
+                    return false;
+                }
+            });
+        };
+    </script>
+</body>
+
+
+</html>
