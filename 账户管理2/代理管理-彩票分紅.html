@@ -1,0 +1,650 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+
+</head>
+<body class="body1">
+    <div class="header">
+        <div class="wrap">
+            <a href="#" class="icon a_back"></a>
+            <h1>待遇管理</h1>
+        </div>
+    </div>
+    <div class="mainer">
+        <div class="page_ctjl">
+            <div class="main_tit main_tit1 clear">
+                <ul>
+                    <li class="on"><a href="#"><span><label>彩票分红</label></span></a></li>
+                    <li><a href="#"><span><label>娱乐分红</label></span></a></li>
+                    <li><a href="#"><span><label>体育分红</label></span></a></li>
+                    <li><a href="#"><span><label>实时&挂单工资</label></span></a></li>
+                </ul>
+            </div>
+            <div class="wrap">
+                <div class="search err"><input type="text" value="未输入用户名，显示团队用户"><a href="#">搜索</a></div>
+            </div>
+            
+            <div class="where_btns">
+                <a href="javascript:void(0)" class="btn" onclick="$('.modal_fhpcqd').show()">分红批次签订</a> 
+                <a href="javascript:void(0)" class="btn on " onclick="$('.modal_fhpf').show()">分红派发</a> 
+            </div>
+            <div class="ctjl_zhje">
+                <div class="item">
+                    <div class="title">
+                        <h3><label class="c3">may456789</label><em class="lbl">在线</em></h3>
+                    </div>
+                    <ul class="list2">
+                        <li><span>下级:</span>0</li>
+                        <li><span>奖金号:</span>1990</li>
+                        <li><span>团队余额:</span>0</li>
+                        <li><span>设置时间:</span>2024-1024 13：38</li>
+                        <li><span>工资状态:</span>未签约</li>
+                        <li><span>操作:</span><a class="edit1" onclick="$('.modal_gzzt').show()"></a><a class="edit3" onclick="$('.modal_fhmx').show()"></a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <h3><label class="c3">may456789</label><em class="lbl lbl2">离线</em></h3>
+                    </div>
+                    <ul class="list2">
+                        <li><span>下级:</span>0</li>
+                        <li><span>奖金号:</span>1990</li>
+                        <li><span>团队余额:</span>0</li>
+                        <li><span>设置时间:</span>2024-1024 13：38</li>
+                        <li><span>工资状态:</span>未签约</li>
+                        <li><span>操作:</span><a class="edit1" onclick="$('.modal_gzzt').show()"></a><a class="edit2" onclick="$('.modal_gzsz').show()"></a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <h3><label class="c3">may456789</label><em class="lbl lbl2">离线</em></h3>
+                    </div>
+                    <ul class="list2">
+                        <li><span>下级:</span>0</li>
+                        <li><span>奖金号:</span>1990</li>
+                        <li><span>团队余额:</span>0</li>
+                        <li><span>设置时间:</span>2024-1024 13：38</li>
+                        <li><span>工资状态:</span>未签约</li>
+                        <li><span>操作:</span><a class="edit1" onclick="$('.modal_gzzt').show()"></a><a class="edit2" onclick="$('.modal_gzsz').show()"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_gzzt modal_gz none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>工资状态</h3>
+                    </div>
+                    <div class="cont">
+                        <div class="gz_tit">账号：<span class="c5">Qwww998877</span></div>
+                        <div class="div_j_sb">
+                            <ul>
+                                <li><span>实时工资</span><label class="c2 bold">0.5%</label></li>
+                                <li><span>挂单工资</span><label class="c2 bold">1.30%</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="#" class="a1">确认</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_gzsz modal_gz none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>分红设置</h3>
+                    </div>
+                    <div class="cont">
+                        <div class="gz_tit gz_tit2">账号：<span class="c5">Qwww998877</span></div>
+                        <div class="zhst_tit_tag"> 
+                            <div class="f-j-sb">
+                                <span class="c6">现在分红为：</span>
+                                <div class="item">
+                                    <div class="flex"><span>有效人数活跃(天数)<span class="span_tips rt"><label>可设置有效人数计算天数，如设置4天，则有效人数为活跃4天计算1人。</label></span>：</span>3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab6 cpfh_tab">
+                            <table class="tab_tit">
+                                <tbody>
+                                    <tr>
+                                        <th width="80">总投注量</th>
+                                        <th width="100">有效人数(人)</th>
+                                        <th width="100">亏损金额</th>
+                                        <th width="100">分红比例(%)</th>
+                                        <th width="50">操作</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="tab_scroll">
+                                <table>
+                                    <tbody>
+                                        <tr class="clone">
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>  
+                        <div class="zhst_tit_tag zhst_tit_tag2">
+                            <span class="c6">调整分红为：</span>
+                            <div class="flex">
+                                <div class="item">
+                                    <span>彩票分红设定：</span>
+                                    <select class="select4"><option>10</option><option>5</option><option>2</option><option>1</option></select>%
+                                    <div class="wh10"></div>
+                                </div>
+                                <div class="flex1"></div>
+                                <div class="btns">
+                                    <a href="javascript:void(0)" class="btn1">一键签订</a>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="item">
+                                    <div class="flex"><span>有效人数活跃(天数)<span class="span_tips"><label>可设置有效人数计算天数，如设置4天，则有效人数为活跃4天计算1人。</label></span>：</span><input type="text" value="3" style="width:1.25rem"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab6 cpfh_tab">
+                            <table class="tab_tit">
+                                <tbody>
+                                    <tr>
+                                        <th width="80">总投注量</th>
+                                        <th width="100">有效人数(人)</th>
+                                        <th width="100">亏损金额</th>
+                                        <th width="100">分红比例(%)</th>
+                                        <th width="50">操作</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="tab_scroll">
+                                <table>
+                                    <tbody>
+                                        <tr class="clone">
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="modal_btn">
+                        <a href="#" class="a1">确认</a>
+                        <a href="#" class="">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal modal_gzmzsz modal_gz none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>工资模组设置</h3>
+                        <div class="close"></div>
+                    </div>
+                    <div class="cont">
+                        <div class="zhst_tit">
+                            <ul>
+                                <li class="on">未设置模组A</li>
+                                <li class="">B</li>
+                                <li class="">未设置模组C</li>
+                            </ul>
+                        </div>
+
+                        <div class="div_form">
+                            <ul>
+                                <li>
+                                    <p>模组名称</p>
+                                    <div class="div_input"><input type="text" placeholder="" value="未设置模组A"></div>
+                                </li>
+                                <li>
+                                    <p>实时工资设定</p>
+                                    <div class="div_select2">
+                                        <select>
+                                            <option>未设置</option>
+                                            <option>0.2%</option>
+                                            <option>0.25%</option>
+                                            <option>0.3%</option>
+                                            <option>0.35%</option>
+                                            <option>0.4%</option>
+                                            <option>0.45%</option>
+                                            <option>0.5%</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>挂单工资设定</p>
+                                    <div class="div_select2">
+                                        <select>
+                                            <option>0.3%</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="#" class="a1">确认</a>
+                        <a href="#" class="">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_gzqzqd modal_gz none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>工资群组签订</h3>
+                        <div class="close"></div>
+                    </div>
+                    <div class="cont">
+                        <div class="zhst_tit">
+                            <ul>
+                                <li class="on">未设置模组A</li>
+                                <li class="">B</li>
+                                <li class="">未设置模组C</li>
+                            </ul>
+                        </div>
+
+                        <div class="div_form">
+                            <ul>
+                                <li>
+                                    <p>群组名称设定</p>
+                                    <div class="div_input"><input type="text" placeholder="" value="未设置模组A"></div>
+                                </li>
+                                <li>
+                                    <p>工资模组选择</p>
+                                    <div class="div_select2">
+                                        <select>
+                                            <option>未设置模组A</option>
+                                            <option>B</option>
+                                            <option>未设置模组C</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>实时工资</p>
+                                    <div class="div_select2">
+                                        <select>
+                                            <option>未设置</option>
+                                            <option>0.2%</option>
+                                            <option>0.25%</option>
+                                            <option>0.3%</option>
+                                            <option>0.35%</option>
+                                            <option>0.4%</option>
+                                            <option>0.45%</option>
+                                            <option>0.5%</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>实时工资</p>
+                                    <div class="div_select2">
+                                        <select>
+                                            <option>未设置</option>
+                                            <option>0.2%</option>
+                                            <option>0.25%</option>
+                                            <option>0.3%</option>
+                                            <option>0.35%</option>
+                                            <option>0.4%</option>
+                                            <option>0.45%</option>
+                                            <option>0.5%</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="div_t">
+                                        <div class="f-j-sb">
+                                            <p>群组名单</p>
+                                            <a href="javascript:void(0)" class="icon20" onclick="$('.modal_fhqdtyxj').stop().fadeIn()"></a>
+                                        </div>
+                                        <div class="textarea qzmd_textare"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="#" class="a1">确认</a>
+                        <a href="#" class="">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_fhpcqd modal_gz none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>分红批次签订</h3>
+                        <div class="close"></div>
+                    </div>
+                    <div class="cont wrap">
+
+                        <div class="zhst_tit_tag">
+                            <div class="flex">
+                                <div class="item">
+                                    <div class="flex"><span>有效人数活跃(天数)<span class="span_tips"><label>可设置有效人数计算天数，如设置4天，则有效人数为活跃4天计算1人。</label></span>：</span><input type="text" value="3" style="width:1.25rem"></div>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="item">
+                                    <span>彩票分红设定：</span>
+                                    <select class="select4"><option>10</option><option>5</option><option>2</option><option>1</option></select>%
+                                    <div class="wh10"></div> 
+                                </div>
+                                <div class="flex1"></div>
+                                <div class="btns">
+                                    <a href="javascript:void(0)" class="btn1">一键签订</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab6 cpfh_tab">
+                            <table class="tab_tit">
+                                <tbody>
+                                    <tr>
+                                        <th width="80">总投注量</th>
+                                        <th width="100">有效人数(人)</th>
+                                        <th width="100">亏损金额</th>
+                                        <th width="100">分红比例(%)</th>
+                                        <th width="50">操作</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="tab_scroll">
+                                <table>
+                                    <tbody>
+
+                                        <tr class="clone">
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="80">200000</td>
+                                            <td width="100">2</td>
+                                            <td width="100">1000</td>
+                                            <td width="100">10%</td>
+                                            <td width="50"><a href="javascript:void(0)" class="a_dele">删除</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="div_t">
+                            <div class="f-j-sb">
+                                <p>群组名单</p>
+                                <a href="javascript:void(0)" class="icon20" onclick="$('.modal_fhqdtyxj').stop().fadeIn()"></a>
+                            </div>
+                            <div class="textarea qzmd_textare"></div>
+                        </div> 
+                    </div>
+                    <div class="modal_btn">
+                        <a href="#" class="a1">确认</a>
+                        <a href="#" class="">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_fhmx modal_gz none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>分红明细</h3>
+                        <div class="close"></div>
+                    </div>
+                    <div class="cont wrap">
+                        <div class="gz_tit">用户名：<span class="c5">Qwww998877</span></div>
+                        <div class="div_j_sb2">
+                            <ul>
+                                <li><span>开始时间</span><p>2024-10-31 15:02:30</p></li>
+                                <li><span>结束时间</span><p>2024-10-31 15:02:30</p></li>
+                                <li><span>累计投注量</span><p>100000</p></li>
+                                <li><span>分红比</span><p class="c2">25%</p></li>
+                                <li><span>累计盈亏</span><p class="c2">-1561</p></li>
+                                <li><span>应发分红</span><p>100000</p></li>
+                                <li><span>状态</span><p class="c2">尚未派发</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="#" class="a1">关闭</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_fhqdtyxj modal_gz none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>分红签订套用下级</h3>
+                        <div class="close"></div>
+                    </div>
+                    <div class="cont">
+                        <div class="div_t">
+                            <div class="f-j-sb">
+                                <p>群组名单</p>
+                            </div>
+                            <ul class="ul_tag4-1">
+                                <li class="qzmd_all"><span>全部</span></li>
+                                <li><span>Rfff1234</span></li>
+                                <li><span>oppo8889</span></li>
+                                <li><span>tf1088</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="javascript:void(0)" class="a1" onclick="$(this).parents('.modal').hide();appendList($('.ul_tag4-1'))">确认</a>
+                        <a href="#" class="">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal modal_fhpf modal_gz none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>分红派发</h3>
+                        <div class="close"></div>
+                    </div>
+                    <div class="cont wrap">
+                        <div class="page_data page_data2 page_data10 box_list3">
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span class="span1">时间</span>
+                                        <div class="div_date"><input type="text" class="datepicker" value="2017-04-10"></div>
+                                        <label>—</label>
+                                        <div class="div_date"><input type="text" class="datepicker" value="2018-04-10"></div>
+                                    </li>
+                                    <li>
+                                        <span class="span1">账号</span>
+                                        <div class="div_input"><input type="text" placeholder="请输入账户名"></div> 
+                                        <span class="span1">状态</span>
+                                        <div class="div_select"><select><option>全部</option></select></div>
+
+                                    </li>
+                                    <li>
+                                        <span class="span1">游戏</span>
+                                        <div class="div_select"><select><option>全部</option></select></div>
+
+                                        <div class="page_data_btn flex1">
+                                            <a href="#">查 询</a>
+                                        </div>
+                                    </li>
+                                     
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="zbjl_tab tzjl_tab1">
+                            <div class="ckxj_list_item xg_ckxj_list_item">
+                                <ul>
+                                    <li><span>账号:</span>abc123</li>
+                                    <li><span>开始时间:</span>2019-10-07</li>
+                                    <li><span>结束时间:</span>2019-10-07</li>
+                                    <li><span>累计投注量:</span>123456</li>
+                                    <li><span>分红比:</span>19</li>
+                                    <li><span>累计盈亏:</span><font class="red1">-161661</font></li>
+                                    <li><span>应发分红:</span><font class="red">5000</font></li>
+                                    <li><span>状态:</span><font class="red1">强制派发</font></li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="ckxj_list_item xg_ckxj_list_item">
+                                <ul>
+                                    <li><span>账号:</span>abc123</li>
+                                    <li><span>开始时间:</span>2019-10-07</li>
+                                    <li><span>结束时间:</span>2019-10-07</li>
+                                    <li><span>累计投注量:</span>123456</li>
+                                    <li><span>分红比:</span>19</li>
+                                    <li><span>累计盈亏:</span><font class="red1">-161661</font></li>
+                                    <li><span>应发分红:</span><font class="red">5000</font></li>
+                                    <li><span>状态:</span>不需分红</li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="ckxj_list_item xg_ckxj_list_item">
+                                <ul>
+                                    <li><span>账号:</span>abc123</li>
+                                    <li><span>开始时间:</span>2019-10-07</li>
+                                    <li><span>结束时间:</span>2019-10-07</li>
+                                    <li><span>累计投注量:</span>123456</li>
+                                    <li><span>分红比:</span>19</li>
+                                    <li><span>累计盈亏:</span><font class="red1">-161661</font></li>
+                                    <li><span>应发分红:</span><font class="red">5000</font></li>
+                                    <li><span>状态:</span><font class="blue">逾期补发</font><a href="#">逾期补发</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+
+                        </div>
+                    </div> 
+                    <div class="modal_btn">
+                        <a href="#" class="a1">关闭</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

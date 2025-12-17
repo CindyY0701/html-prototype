@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+    <script type="text/javascript" src="../js/owl.carousel.js"></script>
+    <script>
+        $(function () {
+            $(".bank_owl").owlCarousel({ items: 1, autoWidth:true,dots:false})
+           
+        })
+    </script>
+</head>
+<body class="body1">
+    <div class="header head_bank">
+        <div class="wrap">
+            <a href="#" class="a_back1 lt"></a>
+            <h1>银行卡管理</h1>
+            <a href="#" class="a_add icon"></a>
+        </div>
+    </div>
+    <div class="mainer">
+        <div class="bank_head">
+            <div class="bg"></div>
+            <p class="p_tit">已经绑定一张银行卡，共可绑定5张</p>
+            <div class="bank_owl">
+                <div class="item item1">
+                    <div class="top clear">
+                        <div class="img"><img src="../img/img/bank1.png" /></div>
+                        <div class="text">
+                            <h3>中国农业银行</h3>
+                            <p><span class="span1">北京朝阳区</span><span class="span2">毛**</span></p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>4620 **** **** 139</p>
+                    </div>
+                </div>
+                <div class="item item2">
+                    <div class="top clear">
+                        <div class="img"><img src="../img/img/bank2.png" /></div>
+                        <div class="text">
+                            <h3>中国农业银行</h3>
+                            <p><span>北京朝阳区</span><span>毛**</span></p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>4620 **** **** 139</p>
+                    </div>
+                </div>
+                <div class="item item1">
+                    <div class="top clear">
+                        <div class="img"><img src="../img/img/bank1.png" /></div>
+                        <div class="text">
+                            <h3>中国农业银行</h3>
+                            <p><span class="span1">北京朝阳区</span><span class="span2">毛**</span></p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>4620 **** **** 139</p>
+                    </div>
+                </div>
+                <div class="item item2">
+                    <div class="top clear">
+                        <div class="img"><img src="../img/img/bank2.png" /></div>
+                        <div class="text">
+                            <h3>中国农业银行</h3>
+                            <p><span>北京朝阳区</span><span>毛**</span></p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>4620 **** **** 139</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btns"><a href="#">锁定银行卡</a><a href="#">添加新的银行卡</a></div>
+        </div>
+        <div class="bank_tips">
+            <div class="tit"><span>使用提示</span></div>
+            <div class="text">
+                <p>银行卡绑定成功后，平台任意区域都不会出现您的完整银行账号，开户姓名等信息。</p>
+                <p>一个账户只能绑定同一个开户人姓名的银行卡</p>
+                <p>每个账号只能添加同一个开户人姓名的银行卡</p>
+                <p>添加/修复/锁定银行卡信息后，需0小时候方可提现</p>
+                <p>必须绑定银行卡后方可提现</p>
+                <p>锁定银行卡之后无法再添加银行卡</p>
+            </div>
+        </div>
+    </div> 
+     
+    <!--银行卡设置-银行卡管理锁定成功-->
+    <div class="modal modal_tips login_modal_tips none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="ht30"></div>
+                    <div class="tips_img">
+                        <img src="../img/img/tips3.png">
+                    </div>
+                    <div class="cont">
+                        <div class="modal_tips_web center">
+                            <p>银行卡锁定成功</p>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a class="a1" href="#">确认</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--银行卡设置-银行卡管理锁定提醒-->
+    <div class="modal modal_tips login_modal_tips">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="ht30"></div>
+                    <div class="tips_img">
+                        <img src="../img/img/tips3.png">
+                    </div>
+                    <div class="cont">
+                        <div class="modal_tips_web center">
+                            <p>您确定要锁定银行卡吗？锁定后将无法继续新增银行卡</p>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a class="a1" href="#">确认</a>
+                        <a class="a2" href="#">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

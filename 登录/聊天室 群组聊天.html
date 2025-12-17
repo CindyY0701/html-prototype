@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+
+    <script>
+        $(function () {
+            $('.btn_memsea').click(function () {
+                $(this).parents('.member_search').find('.drop').show();
+            })
+            $('body,html').bind("click", function (e) {
+                var target = $(e.target);
+                if (target.closest(".member_search").length == 0) {
+                    $(".member_search .drop").hide();
+                }
+            })
+            $('.icon_group').click(function () {
+                $('.group_member').stop().slideToggle();
+            })
+            $('.member_del').click(function () {
+                $('.modal_del_member').stop().fadeIn();
+            })
+
+            $('.member_add').click(function () {
+                $('.modal_add_member').stop().fadeIn();
+            })
+            $('.qt_jy').click(function () {
+                $('.modal_qtjy_member').stop().show();
+            })
+            $('.btn_qtjy').click(function () {
+                if ($('.qt_jy').hasClass('on')) {
+                    $('.qt_jy').removeClass('on')
+                    $('.group_member ul li').removeClass('on')
+                    $('.modal_qtjy_member').stop().hide();
+                } else {
+                    $('.qt_jy').addClass('on')
+                    $('.group_member ul li').addClass('on')
+                    $('.modal_qtjy_member').stop().hide();
+                }
+            })
+            $('.member_jy').click(function () {
+                yhjy($(this).parents('li').index())
+            })
+        })
+        function yhjy(i) {
+            $('.modal_jy_member').show();
+            $('.btn_dyhjy').on('click', function () {
+                if ($('.group_member ul li').eq(i).hasClass('on')) {
+                    $('.group_member ul li').eq(i).removeClass('on')
+                } else {
+                    $('.group_member ul li').eq(i).addClass('on')
+                }
+                $('.modal_jy_member').hide();
+                $('.btn_dyhjy').unbind();
+            })
+        }
+    </script>
+
+</head>
+<body class="body1">
+    <div class="header fixed">
+        <div class="wrap">
+            <a href="#" class="icon a_back"></a>
+            <h1><em>群组名称</em>（123/123）<i class="qt_jy"></i></h1>
+            <div class="icon_group"></div>
+            <div class="group_member" style="display:block">
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div class="member_search">
+                                <div class="div_inp">
+                                    <input type="text" placeholder="添加新成员用户名" />
+                                    <button class="btn_memsea"></button>
+                                </div>
+                                <div class="drop">
+                                    <p>testc1<span class="member_add"></span></p>
+                                    <p>testc2<span class="member_add"></span></p>
+                                    <p>testc3<span class="member_add"></span></p>
+                                    <p>testc4<span class="member_add"></span></p>
+                                    <p>testc5<span class="member_add"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <p>qaz1977（自己）</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <p>zxcxzwe123<i class="member_jy"></i><span class="member_del"></span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <p>strhty6<i class="member_jy"></i><span class="member_del"></span></p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainer xg_mainer">
+        <div class="wrap">
+            <div class="page_lt">
+                <div class="lt_ck qz_lt">
+                    <div class="lt_ck_list">
+                        <div class="lt_tab">
+                            <div class="lt_list lt_list1">
+                                <div class="name">strhty6</div>
+                                <span><img src="../img/img/icon37.png" /></span>
+                                <div class="web">
+                                    <div class="lt_list_sj"></div>
+                                    <p>您好，这里是咨询类容，这里是咨询内容，这里是咨询类容</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="lt_list time"><p>2022-10-01  22:22:00</p></div>
+                            <div class="lt_list lt_list2">
+                                <div class="name">上级人员</div>
+                                <span><img src="../img/img/icon43.png" /></span>
+                                <div class="web">
+                                    <div class="lt_list_sj"></div>
+                                    <p>您好，这里是咨询类容，这里是咨询内容，这里是咨询类容，这里是咨询类容这里是咨询类容。</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lt_foot_zw"></div>
+    <div class="lt_foot">
+        <div class="wrap">
+            <div class="lt_foot_tp">
+                <a href="#"></a>
+            </div>
+            <div class="lt_foot_bq">
+                <a href="#"></a>
+            </div>
+            <div class="lt_foot_inp">
+                <input type="text" placeholder="输入讯息" />
+            </div>
+            <div class="lt_foot_btn">
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_sztc modal_del_member none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>删除用户</h3>
+                    </div>
+                    <div class="cont">
+                        <div class="mod_add_group center">
+                            <p>您确定要删除用户？</p>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="#">确认</a><a class="a1" href="javascript:void(0)" onclick="$(this).parents('.modal').stop().fadeOut();">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_sztc modal_jy_member none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>禁言用户</h3>
+                    </div>
+                    <div class="cont">
+                        <div class="mod_add_group center">
+                            <p>您确定要禁言此用户？</p>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="javascript:void(0)" class="btn_dyhjy">确认</a><a class="a1" href="javascript:void(0)" onclick="$(this).parents('.modal').stop().fadeOut();">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_sztc modal_qtjy_member none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>全体禁言</h3>
+                    </div>
+                    <div class="cont">
+                        <div class="mod_add_group center">
+                            <p>您确定要全体禁言？</p>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="javascript:void(0)" class="btn_qtjy">确认</a><a class="a1" href="javascript:void(0)" onclick="$(this).parents('.modal').stop().fadeOut();">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_sztc modal_add_member none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>添加用户</h3>
+                    </div>
+                    <div class="cont">
+                        <div class="mod_add_group center">
+                            <p>您确定要添加用户？</p>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="#">确认</a><a class="a1" href="javascript:void(0)" onclick="$(this).parents('.modal').stop().fadeOut();">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

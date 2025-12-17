@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+
+
+    <script>
+        $(function () {
+            $('.cz_select.cz_sel .tit').click(function () {
+                if ($(this).hasClass('on'))
+                    return;
+                else {
+                    $(this).parents('.cz_sel').find('.tit').removeClass('on');
+                    $(this).addClass('on');
+                }
+            })
+        })
+    </script>
+</head>
+<body class="body1">
+    <div class="header">
+        <div class="wrap">
+            <a href="#" class="icon a_back"></a>
+            <h1>充值</h1>
+        </div>
+    </div>
+    <div class="mainer">
+        <div class="gl_tit">
+            <ul>
+                <li><a href="#" class="on">充值</a></li>
+                <li><a href="#">充提记录</a></li>
+            </ul>
+        </div>
+        <div class="cz_tit">
+            <span><label>ezpeer</label>，您好！</span>
+            <span class="frt">账户余额：<label class="lbl_ye">￥5461.00</label></span>
+        </div>
+        <div class="cz_list">
+            <div class="list">
+                <span class="span_tit">充值选项：</span>
+                <div class="cz_select cz_sel flex1">
+                    <div class="tit on"><img src="../img/img/pay9.png" />支付宝</div>
+                    <div class="tit"><img src="../img/img/pay10.png" />网银汇款</div>
+                    <div class="tit"><img src="../img/img/pay11.png" />微信支付</div>
+                    <div class="tit"><img src="../img/img/pay12.png" />京东支付</div>
+                    <div class="tit"><img src="../img/img/pay13.png" />银联扫码</div>
+                    <div class="tit"><img src="../img/img/pay14.png" />云闪付</div>
+                    <div class="tit"><img src="../img/img/pay15.png" />在线支付</div>
+                    <div class="tit"><img src="../img/img/pay5.png" />快捷支付</div>
+                    <div class="tit"><img src="../img/img/pay6.png" />百度支付</div>
+                    <div class="tit"><img src="../img/img/pay7.png" />财付通</div>
+                    <div class="tit"><img src="../img/img/pay8.png" />QQ钱包</div>
+                    <div class="tit"><img src="../img/img/pay-gb.png">购宝钱包</div>
+
+                </div>
+            </div>
+            <div class="none">
+                <div class="list">
+                    <span class="span_tit">充值金额：</span>
+                    <div class="div_input">
+                        <input type="text" placeholder="请输入充值金额" />
+                        <div class="input_tips">请输入正确的金额</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <span class="span_tit">入款人姓名：</span>
+                    <div class="div_input">
+                        <input type="text" placeholder="请输入入款人姓名" />
+                        <div class="input_tips">请输入入款人姓名</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <span class="span_tit">金额大写：</span>
+                    <div class="div_input_big">
+                        <span></span>元
+                    </div>
+                </div>
+            </div>
+            <div class="load_tips_list">
+                <div class="first_load_tips">
+                    <div class="item">
+                        <p class="red">请使用手机内购宝扫码器更新钱包</p>
+                        <div class="ewm center"><img src="../img/img/ewm.jpg"></div>
+                        <p>请截图后开启购宝使用扫码绑定</p>
+                    </div>
+                </div>
+                <div class="first_load_tips wd">
+                    <div class="item">
+                        <h3>初次使用？</h3>
+                        <a href="#">立即注册</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="cz_tipb">
+            <div class="cz_tips1"><p>最低：10元， 最高：20000元</p></div>
+            <div class="tips6">
+                <h3>贴心提示</h3>
+                <div class="txt">
+                    <span>手续费:1.1%</span>
+                    <span>手续费金额:1.1</span>
+                    <span>实际入款金额:8.9</span>
+                </div>
+            </div>
+            <div class="cz_btn"><a href="#">确 认</a></div>
+        </div>
+        <div class="cz_tips2">
+            <h3>注意事项：</h3>
+            <p>1：平台填写金额应与网银汇款金额一致，否则无法即时到账</p>
+            <p>2：如选择银行卡转账，请勿使用其他支付方式，否则充值将无法到账</p>
+        </div>
+    </div>
+
+    <!--5 首页 充值弹窗-->
+    <div class="modal modal_tips modal_cztc login_modal_tips none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="ht30"></div>
+                    <div class="tips_img">
+                        <img src="../img/img/tips.png">
+                    </div>
+                    <div class="cont">
+                        <div class="modal_tips_web">
+                            <p>系统收款账户不定期更换，请勿保存！请每次付款前认真核对，打入非指定银行账户，损失自理！</p>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a class="a1" href="#">确认</a><a href="#">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--银行卡停用公告-->
+    <div class="modal modal_tips modal_bank_stop login_modal_tips none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        银行卡停用公告
+                        <div class="close"></div>
+                    </div>
+                    <div class="cont">
+                        <div class="bank_tab">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th><span>名称</span></th>
+                                        <th><span>银行</span></th>
+                                        <th><span>卡号</span></th>
+                                        <th><span>停用时间</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>况国华</td>
+                                        <td>农业银行</td>
+                                        <td>6228********5671</td>
+                                        <td>2018-08-05 14:04:50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>况国华</td>
+                                        <td>农业银行</td>
+                                        <td>6228********5671</td>
+                                        <td>2018-08-05 14:04:50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>况国华</td>
+                                        <td>农业银行</td>
+                                        <td>6228********5671</td>
+                                        <td>2018-08-05 14:04:50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>况国华</td>
+                                        <td>农业银行</td>
+                                        <td>6228********5671</td>
+                                        <td>2018-08-05 14:04:50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>况国华</td>
+                                        <td>农业银行</td>
+                                        <td>6228********5671</td>
+                                        <td>2018-08-05 14:04:50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>况国华</td>
+                                        <td>农业银行</td>
+                                        <td>6228********5671</td>
+                                        <td>2018-08-05 14:04:50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>况国华</td>
+                                        <td>农业银行</td>
+                                        <td>6228********5671</td>
+                                        <td>2018-08-05 14:04:50</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                         
+                        </div>
+                        <div class="text">
+                            <p>存入停用银行，损失有客户本人承担！</p>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="#">知道了，不再提醒</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

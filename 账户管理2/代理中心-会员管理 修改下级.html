@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css"><script type="text/javascript" src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+    <script type="text/javascript" src="../js/owl.carousel.js"></script>
+
+    <link rel="stylesheet" href="../css/bootstrap-slider.css">
+    <script src="../js/bootstrap-slider.js"></script>
+    <script>
+        $(function () {
+            $("#ex_hdt").slider().on("slide", function (slideEvt) {
+                $(".slider_lbl").text(slideEvt.value);
+            });
+
+            $('.xgxj_zysx_btn .btn_zysx').click(function () {
+                $(this).stop().toggleClass('in');
+                $(this).parent().find('.web').stop().slideToggle();
+            })
+        })
+    </script>
+    <script>
+        $(function () {
+            
+        })
+    </script>
+</head>
+<body class="body1">
+    <div class="header on">
+        <div class="wrap">
+            <a href="#" class="icon a_back"></a>
+            <h1>修改下级</h1>
+        </div>
+    </div>
+    <div class="mainer">
+        <div class="wrap xgxj_wrap">
+            <div class="page_xgxj">
+                <div class="xgxj_tab">
+                    <div class="xgxj_item">
+                        <div class="xgxj_list">
+                            <span>下级用户</span>
+                            <div class="xgxj_list_web">
+                                <div class="xgxj_list_web_m">
+                                    <p><em class="em1">KF123456</em></p>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="xgxj_list">
+                            <span>用户类型</span>
+                            <div class="xgxj_list_web">
+                                <div class="div_rad div_rad1">
+                                    <label class="in">代理：</label><label>会员：</label>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xgxj_tab">
+                    <div class="xgxj_tab_t">
+                        <p>返点设置</p>
+                    </div>
+                    <div class="xgxj_item">
+                        <div class="xgxj_list flex">
+                            <span style="font-size:0.36rem;">返点快速设置</span>
+                            <div class="xgxj_list_web">
+                                <div class="div_em flt">
+                                    <em>下限：0</em>
+                                </div>
+                                <div class="div_em frt">
+                                    <em>上限：12.5</em>
+                                </div>
+                                <div class="xgxj_list_num">
+                                    <div class="xgxj_list_num_fh xgxj_list_num_fha"></div>
+                                    <div class="xgxj_list_num_fh xgxj_list_num_fhd"></div>
+                                    <div class="xgxj_list_num_inp">
+                                        <input type="text" value="2" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="xgxj_list">
+                            <div class="xgxj_list_web xg_flex_web">
+                                <div class="div_hdt">
+                                    <label class="slider_lbl">0</label>
+                                    <input id="ex_hdt" type="text" data-slider-handle="custom" data-slider-min="0" data-slider-max="5000" data-slider-step="1" data-slider-value="0" />
+                                </div>
+                                <div class="slide_btn">
+                                    <span>最低</span>
+                                    <label onclick="$(this).toggleClass('on')" class=""></label>
+                                    <span>最高</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xgxj_list">
+                            <span>时时彩</span>
+                            <div class="xgxj_list_web">
+                                <div class="xgxj_list_web_inp_m">
+                                    <div class="xgxj_list_web_inp">
+                                        <input type="text" value="3.2" />
+                                    </div>
+                                    <div class="xgxj_list_web_inp_num">1864</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="xgxj_list">
+                            <span>福体彩</span>
+                            <div class="xgxj_list_web">
+                                <div class="xgxj_list_web_inp_m">
+                                    <div class="xgxj_list_web_inp">
+                                        <input type="text" value="3.2" />
+                                    </div>
+                                    <div class="xgxj_list_web_inp_num">1864</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="xgxj_list">
+                            <span>百家乐</span>
+                            <div class="xgxj_list_web">
+                                <div class="xgxj_list_web_inp_m">
+                                    <div class="xgxj_list_web_inp">
+                                        <input type="text" value="3.2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="xgxj_list">
+                            <span>真人视讯</span>
+                            <div class="xgxj_list_web">
+                                <div class="xgxj_list_web_inp_m">
+                                    <div class="xgxj_list_web_inp">
+                                        <input type="text" value="3.2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="tdlb_btn">
+                        <a href="#" class="btn a1">确认修改</a>
+                    </div>
+                </div>
+                <div class="page_xgxj_zysx xgxj_zysx_btn">
+                    <div class="btn_zysx">
+                        <p><span>注意事项</span></p>
+                    </div>
+                    <div class="web">
+                        <p>一、彩种限制最高返点级别：<span>时时彩：12.8%、两分、分分彩：12.8%、秒秒彩：12.8%、福体彩：12%、11选5：12.8%、两分11选5：12.8%、北京赛车：12.8%、快三：12.8%、霸来运转：0%、幸运28:0%。</span></p>
+                        <p>二、快速设置返点：</p>
+                        <p>1.当使用快速设置，将自动设置时：<span>时时彩、两分、分分彩、秒秒彩、福体彩、11选5、两分11选5、北京赛车、快三、霸来运转、幸运28。</span>返点皆设置与快速设置返点相同。</p>
+                        <p>* 例如:快速设置0.2%，意味着新创建用户各彩种返点，时时彩：0.2%、两分、分分彩：0.2%、秒秒彩：0.2%、福体彩：0.2%、11选5：0.2%、两分11选5：0.2%、霸来运转：0.2%、幸运28：0.2%。</p>
+                        <p>2.个彩种最大限制请参考项目一所述，当快速设置返点超过彩种本身最大限制时将不再变化。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

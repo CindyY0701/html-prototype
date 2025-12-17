@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+        $(function () {
+
+        })
+    </script>
+</head>
+<body class="body1">
+    <div class="header on fixed">
+        <div class="wrap">
+            <a href="#" class="a_back1 lt"></a>
+            <h1>个人资料</h1>
+        </div>
+    </div>
+    <div class="mainer h_fix">
+        <div class="page_modify">
+            <div class="modify_list">
+                <ul>
+                    <li>
+                        <div class="profile_picture">
+                            <img src="../img/headpic2.jpg" />
+                            <a href="#">头像设置</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left">用户名</div>
+                        <div class="right">
+                            <div class="web"><p>testc111</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left">昵称</div>
+                        <div class="right">
+                            <div class="div_input"><input type="text" value="今晚来抓g周" readonly /></div>
+                            <div class="inp_btn">
+                                <a class="inp_edit" href="#">修改</a>
+                                <a class="inp_sure" href="#">确定</a>
+                                <a class="inp_cancel" href="#">取消</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left">奖金</div>
+                        <div class="right">
+                            <div class="web"><p>1998<span>代理</span></p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left">注册时间</div>
+                        <div class="right">
+                            <div class="web"><p>2024-12-11 15:43:00</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left">登录IP</div>
+                        <div class="right">
+                            <div class="web"><p>137.220.227.88</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left">近期登录时间</div>
+                        <div class="right">
+                            <div class="web"><p>2024-12-21 15:16:38</p></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('.inp_edit').click(function () {
+                $(this).parents('.inp_btn').addClass('on')
+                $(this).parents('.right').find('.div_input').addClass('on').find('input').prop('readonly', false).focus()
+            })
+            $('.inp_sure').click(function () {
+                $(this).parents('.inp_btn').removeClass('on')
+                $(this).parents('.right').find('.div_input').removeClass('on').find('input').prop('readonly', true)
+            })
+            $('.inp_cancel').click(function () {
+                $(this).parents('.inp_btn').removeClass('on')
+                $(this).parents('.right').find('.div_input').removeClass('on').find('input').prop('readonly', true)
+            })
+        })
+    </script>
+</body>
+</html>

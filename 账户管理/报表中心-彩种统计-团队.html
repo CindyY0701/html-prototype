@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.nice-select.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+    <script type="text/javascript" src="../js/moment.min.js"></script>
+    <script type="text/javascript" src="../js/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+        $(function () {
+            $('select').niceSelect();
+        })
+    </script>
+</head>
+<body class="body1">
+    <div class="header fixed">
+        <div class="wrap">
+            <a href="#" class="icon a_back"></a>
+            <h1>彩种统计</h1>
+        </div>
+    </div>
+    <div class="mainer xg_mainer">
+        <div class="page_ctjl">
+            <div class="main_tit main_tit_3 clear">
+                <ul>
+                    <li class="on"><a href="#"><span><label>今日</label></span></a></li>
+                    <li><a href="#"><span><label>昨日</label></span></a></li>
+                </ul>
+            </div>
+            <div class="page_data page_data2 page_data10 box_list3">
+                <div class="list">
+                    <ul>
+                        <li>
+                            <span>时&nbsp;&nbsp;间</span>
+                            <div class="div_date"><input type="text" class="datepicker" value="2017-04-10"></div>
+                            <label>—</label>
+                            <div class="div_date"><input type="text" class="datepicker" value="2018-04-10"></div>
+                        </li>
+                        <li>
+                            <span>类&nbsp;&nbsp;型</span>
+                            <div class="div_select"><select><option>所有类型</option></select></div>
+                        </li>
+                        <li>
+                            <span>彩&nbsp;&nbsp;种</span>
+                            <div class="div_select"><select><option>时时彩</option></select></div>
+                        </li>
+                        <li>
+                            <span>排&nbsp;&nbsp;序</span>
+                            <div class="div_select"><select><option>投注金-高至低</option></select></div>
+                        </li>
+                        <li>
+                            <span>用户名</span>
+                            <div class="div_input"><input type="text" value="当无输入用户名，会直接显示团队总和" /></div>
+                        </li>
+                        <li class="li10">
+                            <div class="zhjl_xz">
+                                <div class="zhjl_xz_btn">
+                                    <a href="#">个人</a><a class="on" href="#">团队</a>
+                                </div>
+                                <div class="page_data_btn">
+                                    <a href="#">查 询</a>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <script>
+                                        $('input[class="datepicker"]').daterangepicker({
+                                            singleDatePicker: true,
+                                            opens: 'center',
+                                            locale: {
+                                                format: 'YYYY-MM-DD',
+                                                applyLabel: '确定',
+                                                cancelLabel: '取消',
+                                                fromLabel: '起始时间',
+                                                toLabel: '结束时间',
+                                                daysOfWeek: ['日', '一', '二', '三', '四', '五', '六'],
+                                                monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+                                                firstDay: 1
+                                            }
+                                        },
+                                            function (start, end, label) {
+                                                //alert("A new date range was chosen: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+                                            });
+                    </script>
+                </div>
+            </div>
+            <div class="mb_zbjl_tab">
+                <div class="zbjl_tab zbjl_tab10">
+                    <div class="zbjl_tab_t">
+                        <h4>团队总和</h4>
+                    </div>
+                    <div class="ckxj_list_item">
+                        <ul>
+                            <li><span>投注人数:</span>12</li>
+                            <li><span>投注单数:</span>128</li>
+                            <li><span>投注金额:</span><font>2140.00</font></li>
+                            <li><span>返点:</span><font>25.00</font></li>
+                            <li><span>盈亏:</span><font class="red">-500.00</font></li>
+                            <li><span>奖金:</span><font>1600.00</font></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb_zbjl_tab">
+                <div class="zbjl_tab zbjl_tab10">
+                    <div class="zbjl_tab_t">
+                        <h4>重庆时时彩</h4>
+                    </div>
+                    <div class="ckxj_list_item">
+                        <ul>
+                            <li><span>投注人数:</span>12</li>
+                            <li><span>投注单数:</span>128</li>
+                            <li><span>投注金额:</span><font>2140.00</font></li>
+                            <li><span>返点:</span><font>25.00</font></li>
+                            <li><span>盈亏:</span><font class="c4">500.00</font></li>
+                            <li><span>奖金:</span><font>1600.00</font></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

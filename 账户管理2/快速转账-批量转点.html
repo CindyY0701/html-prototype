@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css"><script type="text/javascript" src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+    <script type="text/javascript" src="../js/owl.carousel.js"></script>
+
+    <link rel="stylesheet" href="../css/bootstrap-slider.css">
+    <script src="../js/bootstrap-slider.js"></script>
+    <script>
+        $(function () {
+            $("#ex_hdt").slider().on("slide", function (slideEvt) {
+                $(".slider_lbl").text(slideEvt.value);
+            });
+
+            $('.xgxj_zysx_btn .btn_zysx').click(function () {
+                $(this).stop().toggleClass('in');
+                $(this).parent().find('.web').stop().slideToggle();
+            })
+
+
+        })
+    </script>
+    <script>
+        $(function () {
+            
+        })
+    </script>
+</head>
+<body class="body1">
+    <div class="header on">
+        <div class="wrap">
+            <a href="#" class="icon a_back"></a>
+            <h1>批量转点</h1>
+        </div>
+    </div>
+    <div class="mainer">
+        <div class="wrap xgxj_wrap">
+            <div class="page_xgxj">
+                <div class="xgxj_tab">
+                    <div class="xgxj_item">
+                        <div class="xgxj_list">
+                            <span>转账类型</span>
+                            <div class="xgxj_list_web">
+                                <div class="div_rad div_rad1">
+                                    <label class="in">充值</label><label>活动</label><label>红利</label>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="xgxj_list">
+                            <span>资金密码</span>
+                            <div class="xgxj_list_web">
+                                <div class="xgxj_list_web_inp_m">
+                                    <div class="xgxj_list_web_inp">
+                                        <input type="text" value="" placeholder="请输入资金密码" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="my_tab2">
+                    <table class="addtable">
+                        <thead class="tab_tit">
+                            <tr class="">
+                                <th>共计</th>
+                                <th>转入账号</th>
+                                <th>转账金额</th>
+                                <th>备注</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="none">
+                                <td class="id">0</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><a href="javascript:void(0)" class="dele">删除</a></td>
+                            </tr>
+
+
+                            <tr class="">
+                                <td class="id">1</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><a href="javascript:void(0)" class="dele">删除</a></td>
+                            </tr>
+                            <tr class="">
+                                <td class="id">2</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><a href="javascript:void(0)" class="dele">删除</a></td>
+                            </tr>
+                            <tr class="">
+                                <td class="id">3</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><a href="javascript:void(0)" class="dele">删除</a></td>
+                            </tr>
+                            <tr class="">
+                                <td class="id">4</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><a href="javascript:void(0)" class="dele">删除</a></td>
+                            </tr>
+                            <tr class="">
+                                <td class="id">5</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><a href="javascript:void(0)" class="dele">删除</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="modal_btns2 flex">
+                        <a href="javascript:void(0)" class="a1">取消</a>
+                        <div class="flex1"></div>
+                        <a href="javascript:void(0)" class="a2 addtab">添加行</a>
+                        <a href="" class="a2">确定转账</a>
+                    </div>
+                    <script>
+                        $(".addtab").click(function () {
+                            var tr = $(".addtable tr.none").clone(true).removeClass("none")
+                            tr.find(".id").html($(".addtable tbody tr").length)
+
+                            $(".addtable tbody").append(tr)
+                            $(".my_tab2").scrollTop(10000)
+                        })
+                        $(".addtable .dele").click(function (e) {
+                            e.stopPropagation()
+                            $(this).parent("td").parent("tr").remove()
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+
+</head>
+<body class="body1">
+    <div class="header fixed">
+        <div class="wrap">
+            <a href="#" class="icon a_back"></a>
+            <h1>周期分红占成</h1>
+        </div>
+    </div>
+    <div class="mainer xg_mainer">
+        <div class="wrap">
+            <div class="dailypayFormbar">
+                <div class="mainpageline">
+                    <a style="min-height: 43px; margin-bottom: 0px;">
+                        <div class="txttitle">保证金:</div>
+                        <div class="mainpageinput">0</div>
+                        <div class="txttitle">状态:</div>
+                        <div class="mainpageinput">未结算</div>
+                    </a>
+                    <a style="min-height: 43px; justify-content: space-between;">
+                        <div class="txttitle" style="min-width: 45px;">操作:</div>
+                        <div class="mainpageinput" style="color: #fff;" onclick="$('.xg_mainer').hide();$('.autocontent_top').show()">[存入保證金]</div>
+                        <div class="txttitle" style="font-size: 10px;">2024/03/11 03:00~2024/03/18 03:00</div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="group-box" style="background: none;"><p class="search-results" style="text-align: left; color: #fff; padding: 20px 0px 0px;">结算状态</p></div>
+            <div class="group-box" style=""><p class="search-results">查无资料</p></div>
+            <div class="mainpageline">
+                <a style="min-height: 43px; margin-bottom: 0px;">
+                    <div class="txttitle">团队盈亏:</div>
+                    <div class="mainpageinput">-20,000</div>
+                    <div class="txttitle">保证金:</div>
+                    <div class="mainpageinput">50,000</div>
+                    <div class="txttitle">占成结果:</div>
+                    <div class="mainpageinput">2,000</div>
+                </a>
+                <a style="min-height: 43px; justify-content: space-between;">
+                    <div class="txttitle" style="min-width: 45px;">保证金退回:</div>
+                    <div class="mainpageinput">50,000</div>
+                    <div class="txttitle" style="min-width: 45px;">占成奖励:</div>
+                    <div class="mainpageinput">2,000</div>
+                </a>
+            </div>
+            <div class="group-box" style="background: none;"><p class="search-results" style="text-align: left; color: black; padding: 20px 0px 0px;">占成规则说明</p></div>
+            <div class="dailypay_rules">
+                <p>
+                    1.保证金存入金额最低100元；最高上限50000元。
+                    <br>2.存入保证金将锁定，无法取消并退回。
+                    <br>3.占成模式仅限于下周期开始前『1周』进行锁定。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="autocontent_top">
+        <div class="mainpageline">
+            <a><div class="txttitle">彩票余额</div> <div class="mainpageinput">18</div></a>
+            <a><div class="txttitle">存入保证金</div> <div class="mainpageinput"><input type="number" class="mainpageinput"></div></a>
+            <a><div class="txttitle">资金密码</div> <div class="mainpageinput"><input type="password" class="mainpageinput"></div></a>
+        </div>
+        <div class="bigallbtn"><button class="btn normal-btn" onclick="$('.xg_mainer').show();$('.autocontent_top').hide()">确定</button></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"><link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+        $(function () {
+            $(".talk_list ul li .tit").click(function () {
+                $(this).parents('li').find(".drop").stop().slideToggle();
+                $(this).parents('li').toggleClass("on")
+            })
+            $('.talk_list .tit h3 i,.talk_list .drop .text p i').each(function () {
+                if (parseInt($(this).html()) > 99) {
+                    $(this).html('99+')
+                }
+            })
+            $('.create_group h4').click(function () {
+                $(this).parents('.create_group').find('.group_slide').stop().slideDown();
+            })
+            $('.group_hide').click(function () {
+                $(this).parents('.group_slide').stop().slideUp();
+            })
+            $('.group_add').click(function () {
+                $('.modal_group_tips').stop().fadeIn();
+            })
+            $('.mub_add').click(function () {
+                $('.modal_move_group').stop().fadeIn();
+            })
+            $('.mub_del').click(function () {
+                $('.modal_del_group').stop().fadeIn();
+            })
+            $('.mub_edit').click(function () {
+                $('.modal_edit_group').stop().fadeIn();
+            })
+        })
+    </script>
+
+
+</head>
+<body class="body1">
+    <div class="header fixed">
+        <div class="wrap">
+            <a href="#" class="icon a_back"></a>
+            <h1>聊天室</h1>
+        </div>
+    </div>
+    <div class="mainer xg_mainer">
+        <div class="talk_search talk_search10">
+            <div class="div_inp">
+                <input type="text" placeholder="搜寻下级用户" />
+                <button></button>
+            </div>
+        </div>
+        <div class="talk_list xt_talk">
+            <div class="drop boxshadow">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="img"><img src="../img/img/icon42.png" /></div>
+                            <div class="text group_text">
+                                <h4>系统讯息</h4>
+                                <div class="xx_num qz_xx_num">1</div>
+                            </div>
+                            <div class="clear"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img"><img src="../img/img/icon37.png" /></div>
+                            <div class="text group_text">
+                                <h4>客服人员</h4>
+                                <div class="xx_num qz_xx_num">1</div>
+                            </div>
+                            <div class="clear"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="talk_list">
+            <ul>
+                <li class="boxshadow">
+                    <div class="tit"><h3>未读讯息<span>（1）</span><i>100</i></h3></div>
+                    <div class="drop">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="../img/img/icon43.png" /></div>
+                                    <div class="text group_text">
+                                        <h4>上级人员</h4>
+                                        <div class="xx_num qz_xx_num">1</div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="boxshadow">
+                    <div class="tit"><h3>上级用户<span>（1）</span><i>1</i></h3></div>
+                    <div class="drop">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="../img/img/icon43.png" /></div>
+                                    <div class="text group_text">
+                                        <h4>上级人员</h4>
+                                        <div class="xx_num qz_xx_num">1</div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="boxshadow">
+                    <div class="tit"><h3>下级用户<span>（1/2）</span><i class="seound" onclick="$('.modal_gb').stop().show()"></i></h3></div>
+                    <div class="drop">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="../img/img/icon43.png" /></div>
+                                    <div class="text group_text">
+                                        <h4>KOF973</h4>
+                                        <div class="mub_add"></div>
+                                        <div class="xx_num">1</div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </li>
+                            <li class="in">
+                                <a href="#">
+                                    <div class="img"><img src="../img/img/icon43.png" /></div>
+                                    <div class="text group_text">
+                                        <h4>HYF123</h4>
+                                        <div class="mub_add"></div>
+                                        <div class="xx_num">1</div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="boxshadow">
+                    <div class="tit"><h3>我的群组<span>（1）</span><i>100</i></h3></div>
+                    <div class="drop">
+                        <div class="create_group">
+                            <h4>+创建群组</h4>
+                            <div class="group_slide">
+                                <div class="group_slide_btn">
+                                    <a class="group_add" href="javascript:void(0)">确定</a><a class="a1 group_hide" href="javascript:void(0)">取消</a>
+                                </div>
+                                <div class="div_inp">
+                                    <input type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="../img/img/icon90.png" /></div>
+                                    <div class="text group_text">
+                                        <h4><em>群组名称</em>（1/1）</h4>
+                                        <div class="mub_edit"></div>
+                                        <div class="mub_del"></div>
+                                        <div class="xx_num qz_xx_num">1</div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="boxshadow">
+                    <div class="tit"><h3>搜寻结果<span>（1）</span></h3></div>
+                    <div class="drop">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="../img/img/icon43.png" /></div>
+                                    <div class="text group_text">
+                                        <h4>KOF973</h4>
+                                        <div class="mub_add"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal modal_talk2 none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="cont">
+                    <div class="tit2"><h3>贴心提示</h3></div>
+                    <div class="text">
+                        <p>群组聊天功能施工中，敬请期待！</p>
+                    </div>
+                    <div class="modal_btn"><a href="#">确定</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_tips login_modal_tips modal_group_tips none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tips_img">
+                        <img src="../img/img/tips3.png">
+                    </div>
+                    <div class="cont">
+                        <div class="modal_tips_web center">
+                            <p>创建成功</p>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a class="a1" href="#">确认</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_sztc modal_move_group none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>新增至现有群组聊天室</h3>
+                    </div>
+                    <div class="cont">
+                        <div class="mod_add_group">
+                            <p>请选择想要移到的群组聊天室</p>
+                            <div class="div_sel">
+                                <select><option>kof123</option></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="#">确认</a><a class="a1" href="javascript:void(0)" onclick="$(this).parents('.modal').stop().fadeOut();">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_sztc modal_del_group none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>删除群组聊天室</h3>
+                    </div>
+                    <div class="cont">
+                        <div class="mod_add_group center">
+                            <p>您确定要删除「123456」群吗？</p>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="#">确认</a><a class="a1" href="javascript:void(0)" onclick="$(this).parents('.modal').stop().fadeOut();">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_sztc modal_edit_group none">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit">
+                        <h3>修改群组名称</h3>
+                    </div>
+                    <div class="cont">
+                        <div class="edit_frout_inp">
+                            <span>群组新名称</span>
+                            <div class="div_inp">
+                                <input type="text" />
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="#">确认</a><a class="a1" href="javascript:void(0)" onclick="$(this).parents('.modal').stop().fadeOut();">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal_sztc modal_gb">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                    <div class="tit"><h3>群组广播</h3></div>
+                    <div class="div_textarea">
+                        <textarea placeholder="请输入群组广播内容"></textarea>
+                    </div>
+                    <div class="modal_btn3"><a href="#" class="on">确定</a><a href="#">取消</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

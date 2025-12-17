@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.nice-select.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/nice-select.css">
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+
+    <script>
+        $(function () {
+            $('select').niceSelect();
+        })
+    </script>
+
+</head>
+<body class="body1">
+    <div class="header on fixed">
+        <div class="wrap">
+            <a href="#" class="a_back1 lt"></a>
+            <h1>绑定银行卡</h1>
+        </div>
+    </div>
+    <div class="mainer h_fix">
+        <div class="bank_bind">
+            <div class="tit">
+                <h3><span>注意事项</span></h3>
+                <p>当绑定两张（含）之后第一张银行卡不管是否正确出款将再也无法做错误绑定删除申请！</p>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <span>选择银行</span>
+                        <div class="text">
+                            <div class="div_select"><select><option>中国农业银行</option></select></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>开户支行名称</span>
+                        <div class="text">
+                            <div class="div_input"><input type="text" placeholder="请输入开户支行名称"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>开户银行省份</span>
+                        <div class="text">
+                            <div class="sel_l">
+                                <div class="div_select"><select><option>请选择省份</option></select></div>
+                                <div class="div_select"><select><option>请选择县市</option></select></div> 
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>开户人姓名</span>
+                        <div class="text">
+                            <div class="div_input"><input type="text" placeholder="请输入开户人姓名"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>银行账号</span>
+                        <div class="text">
+                            <div class="div_input"><input type="text" placeholder="银行卡卡号由10位以上数字组成"></div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <span>确认银行账号</span>
+                        <div class="text">
+                            <div class="div_input"><input type="text" placeholder="请再次确认银行卡卡号"></div>
+                        </div>
+                    </li> 
+                    <li>
+                        <span>资金密码</span>
+                        <div class="text">
+                            <div class="div_input"><input type="text" placeholder="请输入资金密码"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>确认资金密码</span>
+                        <div class="text">
+                            <div class="div_input"><input type="text" placeholder="请再次确认资金密码"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tdlb_btn">
+            <a href="#" class="btn a1">确认绑定</a>
+        </div>
+        <div class="ht30"></div>
+
+    </div>
+
+
+
+</body>
+</html>

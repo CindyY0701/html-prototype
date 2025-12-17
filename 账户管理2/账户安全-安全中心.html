@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+        $(function () {
+            $('.lbl_silder').click(function () {
+                $(this).toggleClass('on')
+            })
+        })
+    </script>
+</head>
+<body class="body1">
+    <div class="header on fixed">
+        <div class="wrap">
+            <a href="#" class="a_back1 lt"></a>
+            <h1>安全中心</h1> 
+        </div>
+    </div>
+    <div class="mainer h_fix">   
+        <div class="page_secure">
+            <div class="secure_top">
+                <div class="left">
+                    <h4>40</h4>
+                    <p>安全指数</p>
+                </div>
+                <div class="right">
+                    <p>您的账号级别为<span>中</span>，还有提升空间</p>
+                    <div class="star">
+                        <span class="on"></span>
+                        <span class="on"></span>
+                        <span class="on"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p>上次登录IP：137.220.138.135</p>
+                    <p>上次登录地址：日本，东京</p>
+                    <p>上次登录时间：2024-12-18 10:19:44</p>
+                </div>
+            </div>
+            <div class="secure_list">
+                <ul>
+                    <li><span class="span1">登录密码</span><label class="lab1">未设置<a href="#">设置</a></label></li>
+                    <li><span class="span2">资金密码</span><label class="lab2">已设置<a href="#">修改</a></label></li>
+                    <li><span class="span3">密保问题</span><label class="lab1">未设置<a href="#">设置</a></label></li>
+                    <li><span class="span4">谷歌验证</span><label class="lab2">已设置<a href="#">修改</a></label></li>
+                    <li><span class="span5">异地验证</span><label class="lbl_silder"></label></li>
+                    <li><span class="span6">问候语</span><label class="lab1">未设置<a href="#">设置</a></label></li>
+                </ul>
+            </div>
+        </div>
+        
+         
+
+    </div> 
+     
+</body>
+</html>
