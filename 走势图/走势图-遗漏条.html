@@ -1,0 +1,980 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="../js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.nice-select.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+        $(function () {
+            $('select').niceSelect();
+        })
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrap flex_c">
+            <a href="#" class="h_icon icon_back"></a>
+            <label class="lbl_tag tag_on"></label>
+            <h1 class="flex_c">奇趣腾讯分分彩<i class="i_icon icon_down"></i></h1>
+            <div class="head_rt">
+                <a href="#" class="h_icon icon_menu"><label class="lbl">8</label></a>
+            </div>
+        </div>
+    </div>
+    <div class="mainer wrap">
+        <div class="main_head">
+            <div>第 <span class="c2">09230672</span> 期</div>
+            <div><span>距离投注时间 </span><span class="c1">00:08:00</span></div>
+            <div class="sound"></div>
+        </div>
+        <div class="main_top">
+            <div class="item">
+                <div class="tit flex_ai">
+                    <a href="javascript:void(0)" class="h_icon icon_menu2" onclick="$('.icon_menu_drop').toggle()">
+                        <div class="icon_menu_drop">
+                            <ul class="ul_tag2">
+                                <li class="flex_ai"><span>换肤</span><i class="tag_color on color1"></i><i class="tag_color color2"></i></li>
+                                <li class="on"><span>中奖提示 : </span><label class="tag"></label></li>
+                                <li class="on"><span>玩法收藏 : </span><label class="tag"></label></li>
+                                <li><span>放大球號  : </span><label class="tag"></label></li>
+                            </ul>
+                        </div>
+                    </a>
+                    <p class="p_tit">第 <span class="c2">09230675</span> 期 </p>
+                    <span class="icon_drop" onclick="$('.modal_kjhm').show().addClass('on')">开奖号码</span>
+                    <i class="flex1"></i>
+                    <div class="lbl_ds ds1"><label>组选60</label></div>
+                </div>
+                <div class="list">
+                    <ul class="flex_c boll_list">
+                        <li><i class="i_boll on">2</i></li>
+                        <li><i class="i_boll">5</i></li>
+                        <li><i class="i_boll">0</i></li>
+                        <li><i class="i_boll">8</i></li>
+                        <li><i class="i_boll">6</i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btm">
+                <span>余额：</span>
+                <span class="c6">30181.07</span>
+                <span>元</span>
+                <a href="#" class="a_sx"></a>
+            </div>
+        </div>
+        <div class="main_menu">
+            <div class="span_menu">添加</div>
+            <div class="list">
+                <ul class="ul_tag">
+                    <li class="on"><a href="#">后四直选-直选单式</a></li>
+                    <li><a href="#">后四直选-直选单式</a></li>
+                    <li><a href="#">后四直选-直选单式</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_tz">
+            <div class="tz_tit">
+                <ul class="ul_tag">
+                    <li><a href="#">投注</a></li>
+                    <li><a href="#">开奖</a></li>
+                    <li class="on"><a href="#">走势</a></li>
+                    <li><a href="#">投注记录</a></li>
+                </ul>
+            </div>
+            <div class="zs_list">
+                <div class="tit">
+                    <div class="flex">
+                        <div class="d_select">
+                            <select class="select2"><option>五星</option></select>
+                        </div>
+                        <ul class="ul_tag flex1 ul2">
+                            <li class="on">最近30期</li>
+                            <li>最近50期</li>
+                            <li>最近100期</li>
+                        </ul>
+                        <div class="icon_set" onclick="$('.modal_set').stop().fadeIn();"></div>
+                    </div>
+                    <div class="flex">
+                        <span>号码分布</span>
+                        <ul class="ul_tag flex1">
+                            <li class="on">万位</li>
+                            <li>千位</li>
+                            <li>百位</li>
+                            <li>十位</li>
+                            <li>个位</li>
+                            <li>号码形态</li>
+                            <li>万位</li>
+                            <li>千位</li>
+                            <li>百位</li>
+                            <li>十位</li>
+                            <li>个位</li>
+                            <li>号码形态</li>
+                            <li>万位</li>
+                            <li>千位</li>
+                            <li>百位</li>
+                            <li>十位</li>
+                            <li>个位</li>
+                            <li>号码形态</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab">
+                    <table class="t_head">
+                        <tr>
+                            <th colspan="2">期数</th>
+                            <th>0</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                        </tr>
+                    </table>
+                    <div class="t_body">
+                        <table>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td class="td_gray"><span>1</span></td>
+                                <td class="td_green"><span>4</span></td>
+                                <td class="td_gray"><span>3</span></td>
+                                <td class="td_green"><span>6</span></td>
+                                <td class="td_gray"><span>1</span></td>
+                                <td><span class="on">5</span></td>
+                                <td class="td_gray"><span>9</span></td>
+                                <td class="td_green"><span>7</span></td>
+                                <td class="td_gray"><span>2</span></td>
+                                <td class="td_green"><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td class="td_gray"><span>1</span></td>
+                                <td class="td_green"><span>5</span></td>
+                                <td class="td_gray"><span>9</span></td>
+                                <td class="td_green"><span>1</span></td>
+                                <td class="td_gray"><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td class="td_gray"><span>6</span></td>
+                                <td class="td_green"><span>7</span></td>
+                                <td class="td_gray"><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td class="td_gray"><span>1</span></td>
+                                <td class="td_green"><span>5</span></td>
+                                <td class="td_gray"><span>9</span></td>
+                                <td class="td_green"><span>1</span></td>
+                                <td><span class="on">4</span></td>
+                                <td><span>3</span></td>
+                                <td class="td_gray"><span>6</span></td>
+                                <td class="td_green"><span>7</span></td>
+                                <td class="td_gray"><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td class="td_gray"><span>1</span></td>
+                                <td class="td_green"><span>5</span></td>
+                                <td class="td_gray"><span>9</span></td>
+                                <td class="td_green"><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td class="td_gray"><span>6</span></td>
+                                <td class="td_green"><span>7</span></td>
+                                <td class="td_gray"><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td class="td_gray"><span>1</span></td>
+                                <td class="td_green"><span>5</span></td>
+                                <td class="td_gray"><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td class="td_gray"><span>6</span></td>
+                                <td class="td_green"><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td class="td_gray"><span>1</span></td>
+                                <td class="td_green"><span>5</span></td>
+                                <td class="td_gray"><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td class="td_gray"><span>6</span></td>
+                                <td class="td_green"><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td class="td_gray"><span>1</span></td>
+                                <td class="td_green"><span>5</span></td>
+                                <td class="td_gray"><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td class="td_gray"><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span class="on">1</span></td>
+                                <td class="td_green"><span>5</span></td>
+                                <td class="td_gray"><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td class="td_gray"><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td class="td_green"><span>5</span></td>
+                                <td class="td_gray"><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                                <td><span class="on">3</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span class="on">9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span class="on">4</span></td>
+                                <td><span>3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span class="on">3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span class="on">3</span></td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                                <td><span class="on">3</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span class="on">9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span class="on">4</span></td>
+                                <td><span>3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span class="on">3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span class="on">3</span></td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                                <td><span class="on">3</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span class="on">9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span class="on">4</span></td>
+                                <td><span>3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span class="on">3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span class="on">3</span></td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                                <td><span class="on">3</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span class="on">9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span class="on">4</span></td>
+                                <td><span>3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span class="on">3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span class="on">3</span></td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                                <td><span class="on">3</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span class="on">9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span class="on">4</span></td>
+                                <td><span>3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span class="on">3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span class="on">3</span></td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span>9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                                <td><span class="on">3</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0892期</td>
+                                <td><span>1</span></td>
+                                <td><span>5</span></td>
+                                <td><span class="on">9</span></td>
+                                <td><span>1</span></td>
+                                <td><span>4</span></td>
+                                <td><span>3</span></td>
+                                <td><span>6</span></td>
+                                <td><span>7</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <table class="t_foot">
+                        <tr class="tr_bg1">
+                            <td colspan="2">出现次数</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                        <tr class="tr_bg2">
+                            <td colspan="2">最大连出</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                        <tr class="tr_bg3">
+                            <td colspan="2">最大遗漏</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                        <tr class="tr_bg4">
+                            <td colspan="2">平均遗漏</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="modal modal_games show">
+        <div class="m_games_list modal_cont">
+            <div class="title"><h2>游戏彩种</h2><div class="close"></div></div>
+            <div class="taggle_list">
+                <div class="taggle_tit">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0)">时时彩</a></li>
+                        <li><a href="javascript:void(0)">11选5</a></li>
+                        <li><a href="javascript:void(0)">快三</a></li>
+                        <li><a href="javascript:void(0)">快乐彩</a></li>
+                        <li><a href="javascript:void(0)">赛车PK10</a></li>
+                        <li><a href="javascript:void(0)">福体彩</a></li>
+                        <li><a href="javascript:void(0)">时时彩</a></li>
+                        <li><a href="javascript:void(0)">11选5</a></li>
+                        <li><a href="javascript:void(0)">快三</a></li>
+                        <li><a href="javascript:void(0)">快乐彩</a></li>
+                        <li><a href="javascript:void(0)">赛车PK10</a></li>
+                        <li><a href="javascript:void(0)">福体彩</a></li>
+                    </ul>
+                </div>
+                <div class="taggle_items">
+                    <div class="list">
+                        <ul class="ul_tag">
+                            <li><a href="#">重庆时时彩</a></li>
+                            <li><a href="#">天津时时彩</a></li>
+                            <li><a href="#">新疆时时彩</a></li>
+                            <li><a href="#">VR金星1.5分彩</a></li>
+                            <li><a href="#">VR火星5分彩</a></li>
+                            <li><a href="#">VR三分彩</a></li>
+                            <li><a href="#">VR六合彩</a></li>
+                            <li><a href="#">VR彩票百家乐</a></li>
+                            <li><a href="#">VR水星分分彩</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul class="ul_tag">
+                            <li><a href="#">广东11选5</a></li>
+                            <li><a href="#">江西11选5</a></li>
+                            <li><a href="#">上海11选5</a></li>
+                            <li><a href="#">江苏11选5</a></li>
+                            <li><a href="#">河北11选5</a></li>
+                            <li><a href="#">两分11选5</a></li>
+                            <li><a href="#">VR自行车</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul class="ul_tag">
+                            <li><a href="#">江苏快三</a></li>
+                            <li><a href="#">安徽快三</a></li>
+                            <li><a href="#">广西快三</a></li>
+                            <li><a href="#">湖北快三</a></li>
+                            <li><a href="#">分分快三</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul class="ul_tag">
+                            <li><a href="#">北海道1.5分彩</a></li>
+                            <li><a href="#">高雄2分彩</a></li>
+                            <li><a href="#">腾讯分分彩</a></li>
+                            <li><a href="#">分分彩</a></li>
+                            <li><a href="#">两分彩</a></li>
+                            <li><a href="#">刮刮彩</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul class="ul_tag">
+                            <li><a href="#">北京赛车PK10</a></li>
+                            <li><a href="#">VR赛车</a></li>
+                            <li><a href="#">VR快艇</a></li>
+                            <li><a href="#">VR木星赛车</a></li>
+                            <li><a href="#">VR赛马</a></li>
+                            <li><a href="#">VR游泳</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul class="ul_tag">
+                            <li><a href="#">福彩3D</a></li>
+                            <li><a href="#">排列三五</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul class="ul_tag">
+                            <li><a href="#">重庆时时彩</a></li>
+                            <li><a href="#">天津时时彩</a></li>
+                            <li><a href="#">新疆时时彩</a></li>
+                            <li><a href="#">VR金星1.5分彩</a></li>
+                            <li><a href="#">VR火星5分彩</a></li>
+                            <li><a href="#">VR三分彩</a></li>
+                            <li><a href="#">VR六合彩</a></li>
+                            <li><a href="#">VR彩票百家乐</a></li>
+                            <li><a href="#">VR水星分分彩</a></li>
+                            <li><a href="#">重庆时时彩</a></li>
+                            <li><a href="#">天津时时彩</a></li>
+                            <li><a href="#">新疆时时彩</a></li>
+                            <li><a href="#">VR金星1.5分彩</a></li>
+                            <li><a href="#">VR火星5分彩</a></li>
+                            <li><a href="#">VR三分彩</a></li>
+                            <li><a href="#">VR六合彩</a></li>
+                            <li><a href="#">VR彩票百家乐</a></li>
+                            <li><a href="#">VR水星分分彩</a></li>
+                            <li><a href="#">重庆时时彩</a></li>
+                            <li><a href="#">天津时时彩</a></li>
+                            <li><a href="#">新疆时时彩</a></li>
+                            <li><a href="#">VR金星1.5分彩</a></li>
+                            <li><a href="#">VR火星5分彩</a></li>
+                            <li><a href="#">VR三分彩</a></li>
+                            <li><a href="#">VR六合彩</a></li>
+                            <li><a href="#">VR彩票百家乐</a></li>
+                            <li><a href="#">VR水星分分彩</a></li>
+                            <li><a href="#">重庆时时彩</a></li>
+                            <li><a href="#">天津时时彩</a></li>
+                            <li><a href="#">新疆时时彩</a></li>
+                            <li><a href="#">VR金星1.5分彩</a></li>
+                            <li><a href="#">VR火星5分彩</a></li>
+                            <li><a href="#">VR三分彩</a></li>
+                            <li><a href="#">VR六合彩</a></li>
+                            <li><a href="#">VR彩票百家乐</a></li>
+                            <li><a href="#">VR水星分分彩</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul class="ul_tag">
+                            <li><a href="#">广东11选5</a></li>
+                            <li><a href="#">江西11选5</a></li>
+                            <li><a href="#">上海11选5</a></li>
+                            <li><a href="#">江苏11选5</a></li>
+                            <li><a href="#">河北11选5</a></li>
+                            <li><a href="#">两分11选5</a></li>
+                            <li><a href="#">VR自行车</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul class="ul_tag">
+                            <li><a href="#">江苏快三</a></li>
+                            <li><a href="#">安徽快三</a></li>
+                            <li><a href="#">广西快三</a></li>
+                            <li><a href="#">湖北快三</a></li>
+                            <li><a href="#">分分快三</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul class="ul_tag">
+                            <li><a href="#">北海道1.5分彩</a></li>
+                            <li><a href="#">高雄2分彩</a></li>
+                            <li><a href="#">腾讯分分彩</a></li>
+                            <li><a href="#">分分彩</a></li>
+                            <li><a href="#">两分彩</a></li>
+                            <li><a href="#">刮刮彩</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul class="ul_tag">
+                            <li><a href="#">北京赛车PK10</a></li>
+                            <li><a href="#">VR赛车</a></li>
+                            <li><a href="#">VR快艇</a></li>
+                            <li><a href="#">VR木星赛车</a></li>
+                            <li><a href="#">VR赛马</a></li>
+                            <li><a href="#">VR游泳</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul class="ul_tag">
+                            <li><a href="#">福彩3D</a></li>
+                            <li><a href="#">排列三五</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_kjhm none">
+        <div class="m_b_modal">
+            <div class="title">
+                <h2>近期开奖</h2>
+                <div class="close"></div>
+            </div>
+            <div class="m_kjhm_list m_kjhm_list10">
+                <div class="tab">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>第<span class="c5">20171118042</span>期</label>
+                                    <ul>
+                                        <li><span>5</span></li>
+                                        <li><span>2</span></li>
+                                        <li><span>3</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>2</span></li>
+                                        <li><span>3</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>5</span></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>第<span class="c5">20171118042</span>期</label>
+                                    <ul><li><span>5</span></li><li><span>2</span></li><li><span>3</span></li><li><span>5</span></li><li><span>5</span></li></ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>第<span class="c5">20171118042</span>期</label>
+                                    <ul><li><span>5</span></li><li><span>2</span></li><li><span>3</span></li><li><span>5</span></li><li><span>5</span></li></ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>第<span class="c5">20171118042</span>期</label>
+                                    <ul><li><span>5</span></li><li><span>2</span></li><li><span>3</span></li><li><span>5</span></li><li><span>5</span></li></ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>第<span class="c5">20171118042</span>期</label>
+                                    <ul><li><span>5</span></li><li><span>2</span></li><li><span>3</span></li><li><span>5</span></li><li><span>5</span></li></ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>第<span class="c5">20171118042</span>期</label>
+                                    <ul><li><span>5</span></li><li><span>2</span></li><li><span>3</span></li><li><span>5</span></li><li><span>5</span></li></ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>第<span class="c5">20171118042</span>期</label>
+                                    <ul><li><span>5</span></li><li><span>2</span></li><li><span>3</span></li><li><span>5</span></li><li><span>5</span></li></ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>第<span class="c5">20171118042</span>期</label>
+                                    <ul><li><span>5</span></li><li><span>2</span></li><li><span>3</span></li><li><span>5</span></li><li><span>5</span></li></ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>第<span class="c5">20171118042</span>期</label>
+                                    <ul><li><span>5</span></li><li><span>2</span></li><li><span>3</span></li><li><span>5</span></li><li><span>5</span></li></ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>第<span class="c5">20171118042</span>期</label>
+                                    <ul><li><span>5</span></li><li><span>2</span></li><li><span>3</span></li><li><span>5</span></li><li><span>5</span></li></ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="tab_line line1"></div>
+                    <div class="tab_line line2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_style modal_set">
+        <div class="fp_modal">
+            <div class="cell">
+                <div class="modal_cont">
+                   <div class="tit"><h3>走势图设置</h3></div>
+                   <div class="set_list">
+                       <div class="item">
+                           <span>遗漏：</span>
+                           <div class="div_rad1 div_rad"><label class="in">显示</label><label>隐藏</label></div>
+                       </div>
+                       <div class="item">
+                           <span>遗漏条：</span>
+                           <div class="div_rad1 div_rad"><label class="in">显示</label><label>隐藏</label></div>
+                       </div> 
+                       <div class="item">
+                           <span>走势：</span>
+                           <div class="div_rad1 div_rad"><label class="in">显示</label><label>隐藏</label></div>
+                       </div> 
+                       <div class="item">
+                           <span>统计：</span>
+                           <div class="div_rad1 div_rad"><label class="in">显示</label><label>隐藏</label></div>
+                       </div>
+                       <p>注：走势图底部的出现次数等统计数据</p>
+                   </div>
+                   <div class="modal_btn">
+                       <a href="#" class="a1">确认</a>
+                       <a href="#">取消</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
