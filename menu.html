@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prototype Menu</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; margin: 20px; }
+    h1 { margin: 0 0 12px; }
+    .hint { color:#666; margin: 0 0 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+    a.btn { display:block; padding:12px 14px; border:1px solid #ddd; border-radius:10px; text-decoration:none; color:#111; background:#fafafa; }
+    a.btn:hover { background:#f0f0f0; }
+    .sec { margin-top: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Prototype Menu</h1>
+  <p class="hint">點選下列按鈕開啟各頁面（此頁不影響原型畫面）。</p>
+
+  <div class="grid">
+    <a class="btn" href="index.html">首頁（index）</a>
+    <a class="btn" href="cq9.html">CQ9</a>
+    <a class="btn" href="哈希投注详情.html">哈希投注詳情</a>
+    <a class="btn" href="区块链哈希值.html">區塊鏈哈希值</a>
+  </div>
+
+  <div class="sec">
+    <h2>走勢圖</h2>
+    <div class="grid">
+      <!-- 下面兩個 href 先保留，Step 3 我會教你填「正確路徑」 -->
+      <a class="btn" href="走势图/11选三_号码走势.html">11選三號碼走勢</a>
+      <a class="btn" href="走势图/开奖走势_重庆时时彩.html">開獎走勢</a>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2>功能模組</h2>
+    <div class="grid">
+      <a class="btn" href="账户管理/index.html">帳戶管理</a>
+      <a class="btn" href="投注/index.html">投注</a>
+      <a class="btn" href="登录/index.html">登入</a>
+      <a class="btn" href="活动/index.html">活動</a>
+      <a class="btn" href="信用/index.html">信用</a>
+    </div>
+  </div>
+</body>
+</html>
